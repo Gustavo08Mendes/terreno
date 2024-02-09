@@ -1,12 +1,19 @@
+body{
+    background-color: #8a8a8a !important;
+}
+.container{
+    background-color: rgb(240, 248, 255);
+}
 header {
     background-color: #292929;
     text-align: center;
     padding: 30px 0;
     color: #fff;
+    margin: 0 -15px 0 -15px !important;
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .informacoes {
@@ -15,7 +22,7 @@ header h1 {
 
 h2 {
     padding: 20px 0;
-    color: red !important;
+    color: #5a8d6d !important;
     font-weight: bold;
 }
 
@@ -25,11 +32,14 @@ iframe {
 }
 
 img {
-    width: 400px;
+    width: 200px;
     height: 700px;
     width: 50% !important;
-    /* ou qualquer valor desejado */
     margin: auto;
+}
+
+.informacoes{
+    /* text-align: center; */
 }
 
 .carousel-item {
@@ -41,15 +51,71 @@ img {
     margin: 30px 0 -20px 0;
 }
 
+.container-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+
+.cards{
+    border-left: 5px solid #78bd92;
+    padding: 10px;
+    background-color: rgb(231, 243, 253);
+    margin: 20px 0px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px rgb(189, 189, 189);
+    min-width: 214px;
+}
+.container-titulo{
+    text-align: center;
+}
+
+iframe{
+    border: 2px solid #e6e6e6 !important;
+}
+.img-whatsapp{
+    height: 20px;
+    width: 20px !important;
+}
 @media (max-width: 767px) {
     img {
         height: 400px;
     }
+    .container-info {
+        display: block;
+        justify-content: space-evenly;
+        margin: 40px 0;
+    }
+    .container-cards{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 490px) {
+    .container-cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cards h4{
+        font-size: 1em;
+    }
+    .cards p{
+        font-size: 0.8em;
+    }
+    .cards{
+        min-width: 151px !important;
+    }
+    
     img {
         width: 300px;
         height: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .container-cards{
+        display: block;
+        justify-content: space-around;
     }
 }
